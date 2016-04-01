@@ -1,1 +1,7 @@
-/* Styling for classless elements */
+html {
+  height: 100%;
+}
+
+body {
+  @extend html;
+}

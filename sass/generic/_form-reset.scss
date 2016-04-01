@@ -1,1 +1,31 @@
-// Reset form elements
+::-ms-clear,
+::-ms-reveal {
+	display: none;
+}
+
+::-webkit-search-cancel-button,
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button {
+	-webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+[type=search] {
+  -webkit-appearance: none;
+}
+
+[type=button],
+[type=submit],
+[type=reset],
+button {
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
