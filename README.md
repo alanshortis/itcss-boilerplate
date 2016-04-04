@@ -14,5 +14,5 @@ This boilerplate is just a starting point for any new CSS project. It's extremel
 * **Tools**: SASS functions and mixins. Note: This and the Settings layers can be excluded if you're not using a pre-processor.
 * **Generic**: Very far reaching selectors. Setting `box-sizing` (using `*`) and CSS resets where elements are selected directly.
 * **Base**: Default styling on elements without classes, such as typography (`h1`, `h2`, etc) and base elements (`html`, `body`).
-* **Components**: Defined parts of the site (navigation, header, footer, carousel) selected with classes, using BEM where appropriate.
-* **Trumps**: Override, helpers and utilities. The highest specificity, often carrying `!important` to guarantee these styles will win.
+* **Components**: Defined parts of the site (navigation, header, footer, carousel) selected with classes, using BEM where appropriate. If it's not obvious what each partial affects, add a comment in your mail `.scss` file when it is imported.
+* **Trumps**: Override, helpers, utilities and shame. The highest specificity, often carrying `!important` to guarantee these styles will win.
