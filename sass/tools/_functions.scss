@@ -1,1 +1,26 @@
-// SASS functions
+// Tint and Shade colors
+@function tint($colour, $percentage) {
+	@return mix(rgb(255, 255, 255), $colour, $percentage);
+}
+
+@function shade($colour, $percentage) {
+	@return mix(rgb(0, 0, 0), $colour, $percentage);
+}
+
+
+// Strip the units from a number
+@function strip-units($number) {
+	@return ($number / ($number * 0 + 1));
+}
+
+
+// Pixels to rem/em
+@function px-to-rem($pixel-value, $unit: rem) {
+  @if $unit == rem or $unit == em {
+    @return (strip-units($pixel-value) / strip-units($base-font-size))#{$unit};
+  }
+  @else {
+    @error "Can only convert pixel values to 'rem' or 'em'.";
+    @return false;
+  }
+}

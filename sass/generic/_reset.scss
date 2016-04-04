@@ -10,21 +10,14 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
   vertical-align: baseline;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
 }
 
 q,
@@ -36,7 +29,7 @@ blockquote {
 }
 img {
   -ms-interpolation-mode: bicubic;
-  border: none;
+  border: 0;
   a & {
     border: 0;
   }
