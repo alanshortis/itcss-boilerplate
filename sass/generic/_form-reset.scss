@@ -1,31 +1,25 @@
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+// We need to have the linter ignore '::-ms-clear', as 'clear' is a standard CSS property.
+// sass-lint:disable-block no-vendor-prefixes
 ::-ms-clear,
 ::-ms-reveal {
-	display: none;
+  display: none;
 }
 
 ::-webkit-search-cancel-button,
+::-webkit-search-results-button,
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button,
 ::-webkit-search-cancel-button,
-::-webkit-search-results-button {
-	-webkit-appearance: none;
-}
-
-textarea {
-  overflow: auto;
-  resize: none;
-}
-
 [type=search] {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
-[type=button],
-[type=submit],
-[type=reset],
-button {
-	&::-moz-focus-inner {
-		border: 0;
-		padding: 0;
-	}
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
